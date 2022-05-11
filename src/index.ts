@@ -7,9 +7,9 @@ let numero2 = document.getElementById("dato2");
 let numero3 = document.getElementById("dato3");
 
 btn1.addEventListener("click", () => {
-  let numero1: number = dato1.value;
-  let numero2: number = dato2.value;
-  let numero3: number = dato3.value;
+  let numero1: number = Number(dato1.value);
+  let numero2: number = Number(dato2.value);
+  let numero3: number = Number(dato3.value);
 
   if (numero1 > numero2 && numero1 > numero3) {
     console.log("El numero " + numero1 + " es el mayor");
